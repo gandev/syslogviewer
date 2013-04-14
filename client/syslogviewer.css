@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    background: #eeeeee;
+    color: #333333;
+}
+
+body, input {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+input {
+    font-size: 100%;
+}
+
+a, a:visited, a:active {
+    color: #258;
+}
+
+h3 {
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 120%;
+    padding: 8px 6px;
+    text-align: center;
+}
+
+#log_filter, #log_pane, #log_filter_chart {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+#log_filter {
+    top: 180px;
+}
+
+#log_pane {
+    top: 230px;
+    overflow: auto;
+}
+
+.severity {
+    cursor: pointer;
+    float: left;
+    margin: 5px;
+    padding: 2px 7px;
+    font-size: 80%;
+    font-weight: bold;
+    background: #999;
+    color: #fff;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+
+    opacity: 1;
+    transition: opacity 0.3s linear;
+    -moz-transition: opacity 0.3s linear;
+    -webkit-transition: opacity 0.3s linear;
+    -o-transition: opacity 0.3s linear;
+
+    position: relative;
+}
+
+#severity_filter .label {
+    float: left;
+    margin-top: 9px;
+    margin-left: 12px;
+    margin-right: 8px;
+}
+
+#severity_filter .severity {
+    margin-top: 10px;
+    border: 1px solid #777;
+}
+
+#severity_filter .selected {
+    background: #69d;
+}
+
+#severity_filter .count {
+    font-weight: normal;
+    padding-left: 2px;
+}
+
+#log_view {
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#log_list .log_entry {
+    display: block;
+    height: 25px;
+    position: relative;
+    overflow: hidden;
+    border-top: 1px solid #ccc;
+}
+
+#log_list .log_entry .log_text {
+    float: left;
+    margin-left: 10px;
+    font-size: 100%;
+}
